@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background: url(../img/bg.jpg) no-repeat;
+    min-height: 100vh;
+    background-position: center;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#board{
+    background: linear-gradient(rgb(189, 235, 189), rgb(245, 245, 187));
+    height: 92vmin;
+    width: 90vmin;
+    border: 10px solid rgb(221, 69, 69);
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+.head{
+    background: linear-gradient(green , rgb(1, 39, 1));
+    border: .25vmin solid white;
+    border-radius: 12px;
+    transform: scale(1.2);
+}
+.snake{
+    background-color: rgb(0, 255, 106);
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+.food{
+    background: linear-gradient(red ,purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
+
+#scoreBoard{
+    /* position: absolute;
+    top: 10px;
+    left: 30px; */
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    
+}
+#HiScore{
+    /* position: absolute;
+    top: 60px;
+    left: 30px; */
+   
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
